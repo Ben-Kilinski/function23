@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var n4 = num % 10; // 9
+        //var n3 = math.floor(num / 10) % 10 // 2
+        //var n2 = math.floor(num / 100) % 10 // 3
+        //var n1 = math.floor(num / 1000) % 10 // 5
+              
+        function sumOfDigits(num) {
+            var sum = 0;
+            while (num > 0){
+            sum = sum + num % 10;
+            num = Math.floor(num / 10);
+            }
+            return sum;
+        }
+        console.log(sumOfDigits(5329)); //print 19
+        console.log(sumOfDigits(123)); //print 6
+        
+    </script>
+</body>
+
+</html>
